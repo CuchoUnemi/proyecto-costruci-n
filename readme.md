@@ -50,17 +50,17 @@ git clone https://github.com/CuchoUnemi/proyecto-costruci-n.git
 Crea y activa un entorno virtual para aislar las dependencias del proyecto:
 
 ```bash
-python -m venv venv
+python -m unemi_ia venv
 ```
 
 En macOS y Linux:
 ```bash
-source venv/bin/activate
+source unemi_ia/bin/activate
 ```
 
 En Windows:
 ```bash
-venv\Scripts\activate
+unemi_ia\Scripts\activate
 ```
 
 ### Instalar las dependencias
