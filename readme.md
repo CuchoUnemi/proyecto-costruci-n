@@ -36,8 +36,8 @@ Asegúrate de contar con los siguientes componentes instalados en tu sistema:
 - Virtualenv
 
 ### Preparación del directorio
-1. Crea un directorio vacío en tu máquina local.
-2. Entra en ese directorio y clona el repositorio dentro de él.
+1. Crea una carpeta vacía en tu máquina local.
+2. Entra en esa carpeta y clona el repositorio dentro de ella.
 
 ### Clonar el repositorio
 Clona el repositorio del proyecto a tu máquina local:
