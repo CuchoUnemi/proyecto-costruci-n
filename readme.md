@@ -69,6 +69,13 @@ Copia el archivo `requirements.txt` desde el repositorio clonado hacia el direct
 ```bash
 pip install -r requirements.txt
 ```
+Luego debes instalar la tecnología de NODE.JS: https://nodejs.org/en/download/package-manager
+Una vez instalado NODE.JS vamos a instalar la siguiente dependencia
+```bash
+npm init -y
+npm install @playwright/test
+npx playwright install
+```
 
 ### Configurar la base de datos
 Configura la base de datos (puede ser Amazon RDS o localmente).
