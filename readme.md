@@ -71,7 +71,8 @@ pip install -r requirements.txt
 ```
 
 ### Configurar la base de datos
-Configura la base de datos (puede ser Amazon RDS o localmente). Crea un archivo `.env` en la raíz del proyecto y define las siguientes variables de entorno:
+Configura la base de datos (puede ser Amazon RDS o localmente).
+Crea un archivo `.env` en la raíz del proyecto y define las siguientes variables de entorno:
 
 `DB_ENGINE=django.db.backends.postgresql`
 
@@ -84,6 +85,14 @@ Configura la base de datos (puede ser Amazon RDS o localmente). Crea un archivo 
 `DB_HOST=rds_endpoint_amazon`
 
 `DB_PORT=5432`
+
+### Configurar la API de OpenAI
+Para que el chatbot funcione, es necesario configurar la clave de API de OpenAI. 
+Crea o edita el archivo `.env` en la raíz del proyecto y añade lo siguiente:
+
+`OPENAI_API_KEY=tu_clave_api_aqui`
+
+Reemplaza `"tu_clave_api_aqui"` con tu clave de OpenAI. Esto permitirá que el modelo de lenguaje funcione correctamente en el chatbot.
 
 
 ### Aplicar migraciones y crear un superusuario
