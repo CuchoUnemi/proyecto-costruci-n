@@ -35,24 +35,40 @@ Asegúrate de contar con los siguientes componentes instalados en tu sistema:
 - PostgreSQL (Amazon RDS o base de datos local para pruebas)
 - Virtualenv
 
+### Preparación del directorio
+1. Crea un directorio vacío en tu máquina local.
+2. Entra en ese directorio y clona el repositorio dentro de él.
+
 ### Clonar el repositorio
 Clona el repositorio del proyecto a tu máquina local:
 
-`git clone https://github.com/CuchoUnemi/proyecto-costruci-n.git`
-
-`cd unemi-ia`
+```bash
+git clone https://github.com/CuchoUnemi/proyecto-costruci-n.git
+```
 
 ### Crear y activar un entorno virtual
 Crea y activa un entorno virtual para aislar las dependencias del proyecto:
 
-`python -m venv venv`
+```bash
+python -m venv venv
+```
 
-`source venv/bin/activate`  (En Windows usa `venv\Scripts\activate`)
+En macOS y Linux:
+```bash
+source venv/bin/activate
+```
+
+En Windows:
+```bash
+venv\Scripts\activate
+```
 
 ### Instalar las dependencias
-Instala las dependencias necesarias desde el archivo `requirements.txt`:
+Copia el archivo `requirements.txt` desde el repositorio clonado hacia el directorio raíz donde creaste el entorno virtual y luego instala las dependencias:
 
-`pip install -r requirements.txt`
+```bash
+pip install -r requirements.txt
+```
 
 ### Configurar la base de datos
 Configura la base de datos (puede ser Amazon RDS o localmente). Crea un archivo `.env` en la raíz del proyecto y define las siguientes variables de entorno:
